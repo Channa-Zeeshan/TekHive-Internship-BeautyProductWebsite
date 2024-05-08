@@ -1,0 +1,212 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,300&display=swap');
+:root{
+    --primary-color: #fa64d5
+} 
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family: 'lato','sans-serif';
+    line-height: 1.6;
+    color: #333;
+}
+ul{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+    color: #333;
+}
+h1, h2{
+    font-weight: 300;
+    line-height: 1.2;
+    margin: 10px 0;
+}
+p{
+    margin: 10px 0;
+}
+img{ 
+    width: 100%;
+}
+.navbar{
+    background-color: var(--primary-color);
+    color: #fff;
+    height: 70px;
+    border: 2px solid #fff;
+}
+.container{
+    max-width: 1100px;
+    margin:0px auto;
+    overflow: auto;
+    padding: 0px 40px;
+    
+}
+.flex{
+    display: flex;
+  
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+.navbar .flex{
+
+    justify-content: space-between;
+}
+.navbar ul{
+    display: flex;
+}
+.navbar a{
+    color:#fff;
+    padding: 10px;
+    margin: 0 5px;
+}
+.navbar a:hover{
+ border-bottom: 2px solid #fff;
+
+}
+.showcase{
+    height: 400px;
+    background-color: var(--primary-color);
+    color: #fff;
+    position: relative;
+}
+.showcase h1{
+    font-size: 40px;
+}
+.showcase p{
+    margin: 20px 0;
+}
+.grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap:20px;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+
+}
+.showcase .grid{
+    grid-template-columns:55% 40%;
+    gap: 30px;
+    overflow: visible;
+}
+.card{
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 3px 10px rgba(0,0,0,0.2);
+    color: #333;
+    padding: 20px;
+    margin: 10px;
+
+}
+.showcase-form{
+    position: relative;
+    top: 60px;
+    height: 350px;
+    width: 400px;
+    padding: 40px;
+    z-index: 100;
+}
+.showcase-form .form-control{
+    margin: 15px 0;
+}
+.showcase-form input, textarea{
+    border: 0;
+    border-bottom: 1px solid #b4ecbb;
+    width: 100%;
+    padding: 3px;
+    font-size: 16px;
+
+    
+}
+.showcase-form input,textarea:focus{
+    outline: none;
+}
+.btn{
+    display: inline-block;
+    padding: 10px 30px;
+    cursor: pointer;
+    background: var(--primary-color);
+    border-radius: 5px;
+    color: #fff;
+    height: 40px;
+}
+.btn-outline{
+    background-color: transparent;
+    border: 1px solid #fff;
+}
+.btn:hover{
+    transform: scale(.98);
+}
+.showcase::before,
+.showcase::after{
+ content: "";
+ position: absolute;
+ height: 100px;
+ bottom: -70px;
+ background: #fff;
+ right: 0;
+ left: 0;
+ transform: skewY(-3deg);
+}
+.imgs{
+    width: 200px;
+}
+ .stats .container{
+    display: flex;
+    padding-top: 100px;
+   
+    flex-wrap: wrap;
+    
+    justify-content: space-between;
+   
+    z-index: 200;
+    position: relative;
+    align-items: flex-end;
+
+
+}
+.stats h2{
+    text-align: center;
+    font-size: 60px;
+}
+.sales{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+.products{
+    background-color: var(--primary-color);
+    height: 200px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    justify-content: center;
+     font-size: 40px;
+}
+.product-pic{
+    width: 70%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+    
+    gap: 30px;
+    justify-content: space-around;
+}
+footer{
+    background-color: var(--primary-color);
+    height: 200px;
+    color: #fff;
+    display: flex;
+    justify-content: space-around;
+}
